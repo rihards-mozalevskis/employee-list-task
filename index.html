@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Employee Directory</title>
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+    <div id="model" class="model" style="display:none;">
+    <div class="model-content">
+    <span id="modelClose" class="model-close">&times;</span>
+    <h2 id="modelName"></h2>
+        <p><strong>Job Title:</strong> <span id="modelTitle"></span></p>
+        <p><strong>Email:</strong> <span id="modelEmail"></span></p>
+        <p><strong>Start Date:</strong> <span id="modelStartDate"></span></p>
+  </div>
+</div>
+
+  <div class="container">
+    <input type="text" id="searchElement" placeholder="Search..." />
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Job Title</th>
+        </tr>
+      </thead>
+      <tbody id="employeeTable">
+      </tbody>
+    </table>
+  </div>
+  <script> 
+     const employeesData = [ // too sad without a server-side implementation :( 
+        {
+    "name": "Alice Johnson",
+    "title": "Developer",
+    "email": "alice.johnson@tinytech.com",
+    "startDate": "2022-01-15"
+  },
+  {
+    "name": "Bob Smith",
+    "title": "Designer",
+    "email": "bob.smith@tinytech.com",
+    "startDate": "2021-10-01"
+  },
+  {
+    "name": "Charlie Brown",
+    "title": "HR Manager",
+    "email": "charlie.brown@tinytech.com",
+    "startDate": "2020-05-22"
+  },
+  {
+    "name": "Diana Carter",
+    "title": "Developer",
+    "email": "diana.carter@tinytech.com",
+    "startDate": "2023-03-10"
+  },
+  {
+    "name": "Evan Lee",
+    "title": "Designer",
+    "email": "evan.lee@tinytech.com",
+    "startDate": "2022-08-18"
+  },
+  {
+    "name": "Fiona Davis",
+    "title": "Product Manager",
+    "email": "fiona.davis@tinytech.com",
+    "startDate": "2019-11-05"
+  },
+  {
+    "name": "George Miller",
+    "title": "QA Engineer",
+    "email": "george.miller@tinytech.com",
+    "startDate": "2021-07-12"
+  },
+  {
+    "name": "Hannah Wilson",
+    "title": "Developer",
+    "email": "hannah.wilson@tinytech.com",
+    "startDate": "2020-09-29"
+  },
+  {
+    "name": "Ian Thompson",
+    "title": "Support Specialist",
+    "email": "ian.thompson@tinytech.com",
+    "startDate": "2023-01-20"
+  },
+  {
+    "name": "Julia Martinez",
+    "title": "Marketing Lead",
+    "email": "julia.martinez@tinytech.com",
+    "startDate": "2018-04-15"
+  },
+  {
+    "name": "Clint Eastwood",
+    "title": "boss",
+    "email": "clint.eastwood@tinytech.com",
+    "startDate": "2021-06-22"
+  }
+     ]
+  </script>
+  <script src="app.js"></script>
+</body>
+</html>
